@@ -1,23 +1,26 @@
 // DEPENDENCIES && GLOBAL VARIABLES
+require('dotenv').config();
 const express = require('express');
 const app = express();
-const port = 2222;
+const port = process.env.PORT || 2222;
+
+const cocktails = require('./models/cocktails.js')
 
 // MIDDLEWARE
 
-// INDEX
+// INDEX: GET - /cocktails/ - index.ejs
 
-// NEW
+// NEW: GET - /cocktails/new - new.ejs
 
-// DELETE
+// DELETE: DELETE - /cocktails/:index
+ 
+// UPDATE: PUT - /cocktails/:index
 
-// UPDATE
+// CREATE: POST - /cocktails/
 
-// CREATE
+// EDIT: GET - /cocktails/:index/edit - edit.ejs
 
-// EDIT
-
-// SHOW
+// SHOW: GET - /cocktails/ - show.ejs
 
 // LISTENERS
 app.listen(port, () => {
