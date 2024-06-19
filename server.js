@@ -2,6 +2,7 @@
 require('dotenv').config();
 const express = require('express');
 const app = express();
+const methodOverride = require('method-override')
 const port = process.env.PORT || 2222;
 
 const cocktails = require('./models/cocktails.js')
@@ -9,6 +10,7 @@ const cocktails = require('./models/cocktails.js')
 // MIDDLEWARE
 app.use(express.json());
 app.use(express.urlencoded({extended: true}))
+app.use(methodOverride('_method'))
 
 // INDEX
 app.get('/cocktails/', (req, res) => {
@@ -22,7 +24,11 @@ app.get('/cocktails/new', (req, res) => {
     res.render('new.ejs')
 })
 
-// DELETE: DELETE - /cocktails/:index
+// DELETE
+app.delete('/cocktails/:index', (req, res) => {
+    cocktails.splice(req.params.index, 1)
+    res.redirect('/cocktails/')
+})
  
 // UPDATE: PUT - /cocktails/:index
 
