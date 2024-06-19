@@ -7,15 +7,20 @@ const port = process.env.PORT || 2222;
 const cocktails = require('./models/cocktails.js')
 
 // MIDDLEWARE
+app.use(express.json());
+app.use(express.urlencoded({extended: true}))
 
-// INDEX: GET - /cocktails/ - index.ejs
+// INDEX
 app.get('/cocktails/', (req, res) => {
     res.render('index.ejs', {
         cocktails: cocktails
     })
 })
 
-// NEW: GET - /cocktails/new - new.ejs
+// NEW
+app.get('/cocktails/new', (req, res) => {
+    res.render('new.ejs')
+})
 
 // DELETE: DELETE - /cocktails/:index
  
