@@ -9,6 +9,11 @@ const cocktails = require('./models/cocktails.js')
 // MIDDLEWARE
 
 // INDEX: GET - /cocktails/ - index.ejs
+app.get('/cocktails/', (req, res) => {
+    res.render('index.ejs', {
+        cocktails: cocktails
+    })
+})
 
 // NEW: GET - /cocktails/new - new.ejs
 
@@ -20,7 +25,7 @@ const cocktails = require('./models/cocktails.js')
 
 // EDIT: GET - /cocktails/:index/edit - edit.ejs
 
-// SHOW: GET - /cocktails/ - show.ejs
+// SHOW
 app.get('/cocktails/:index', (req, res) => {
     res.render('show.ejs', {
         cocktails: cocktails[req.params.index]
