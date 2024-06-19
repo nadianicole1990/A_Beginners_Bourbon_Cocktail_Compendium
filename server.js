@@ -26,7 +26,17 @@ app.get('/cocktails/new', (req, res) => {
  
 // UPDATE: PUT - /cocktails/:index
 
-// CREATE: POST - /cocktails/
+// CREATE
+app.post('/cocktails/', (req, res) => {
+    console.log(req.body)
+    if (req.body.classic === 'on') {
+        req.body.classic = true
+        } else if (req.body.contemporary === 'on') {
+            req.body.classic = false
+            }
+    cocktails.push(req.body)
+    res.redirect('/cocktails/')
+})
 
 // EDIT: GET - /cocktails/:index/edit - edit.ejs
 
