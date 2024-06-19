@@ -45,6 +45,12 @@ app.post('/cocktails/', (req, res) => {
 })
 
 // EDIT: GET - /cocktails/:index/edit - edit.ejs
+app.get('/cocktails/:index/edit', (req, res) => {
+    res.render('edit.ejs', {
+        cocktails: cocktails[req.params.index],
+        index: req.params.index
+    })
+})
 
 // SHOW
 app.get('/cocktails/:index', (req, res) => {
