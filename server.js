@@ -21,6 +21,11 @@ const cocktails = require('./models/cocktails.js')
 // EDIT: GET - /cocktails/:index/edit - edit.ejs
 
 // SHOW: GET - /cocktails/ - show.ejs
+app.get('/cocktails/:index', (req, res) => {
+    res.render('show.ejs', {
+        cocktails: cocktails[req.params.index]
+    })
+})
 
 // LISTENERS
 app.listen(port, () => {
