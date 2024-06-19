@@ -30,11 +30,19 @@ app.delete('/cocktails/:index', (req, res) => {
     res.redirect('/cocktails/')
 })
  
-// UPDATE: PUT - /cocktails/:index
+// UPDATE
+app.put('/cocktails/:index', (req, res) => {
+    if (req.body.classic === 'on') {
+        req.body.classic = true
+        } else if (req.body.contemporary === 'on') {
+            req.body.classic = false
+            }
+    cocktails[req.params.index] = req.body
+    res.redirect('/cocktails/')
+})
 
 // CREATE
 app.post('/cocktails/', (req, res) => {
-    console.log(req.body)
     if (req.body.classic === 'on') {
         req.body.classic = true
         } else if (req.body.contemporary === 'on') {
@@ -44,7 +52,7 @@ app.post('/cocktails/', (req, res) => {
     res.redirect('/cocktails/')
 })
 
-// EDIT: GET - /cocktails/:index/edit - edit.ejs
+// EDIT
 app.get('/cocktails/:index/edit', (req, res) => {
     res.render('edit.ejs', {
         cocktails: cocktails[req.params.index],

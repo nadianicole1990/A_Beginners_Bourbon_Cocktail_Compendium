@@ -7,20 +7,28 @@
 </head>
 <body>
     <h1>Edit</h1>
-    <form action="/cocktails/" method="POST">
-        <input type="text" name="name" id="name" placeholder="Name"></br>
-        <input type="text" name="tools" id="tools" placeholder="Tools"></br>
-        <input type="text" name="glass" id="glass" placeholder="Glass"></br>
-        <input type="text" name="method" id="method" placeholder="Method"></br>
-        <input type="text" name="pourChoice" id="pourChoice" placeholder="Pour Choice: Bourbon"></br>
-        <input type="text" name="otherIngredients" id="otherIngredients" placeholder="Other Ingredients"></br>
-        <input type="text" name="garnish" id="garnish" placeholder="Garnish"></br>
+    <form action="/cocktails/<%= index %>?_method=PUT" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" value="<%= cocktails.name %>"></br>
+        <label for="tools">Tools</label>
+        <input type="text" name="tools" id="tools" value="<%= cocktails.tools %>"></br>
+        <label for="glass">Glass</label>
+        <input type="text" name="glass" id="glass" value="<%= cocktails.glass %>"></br>
+        <label for="method">Method</label>
+        <input type="text" name="method" id="method" value="<%= cocktails.method %>"></br>
+        <label for="pourChoice">Pour Choice</label>
+        <input type="text" name="pourChoice" id="pourChoice" value="<%= cocktails.pourChoice %>"></br>
+        <label for="otherIngredients">Other Ingredients</label>
+        <input type="text" name="otherIngredients" id="otherIngredients" value="<%= cocktails.otherIngredients %>"></br>
+        <label for="garnish">Garnish</label>
+        <input type="text" name="garnish" id="garnish" value="<%= cocktails.garnish %>"></br>
         <label for="classic">Classic</label>
         <input type="checkbox" name="classic" id="classic" />
         <label for="contemporary">Contemporary</label>
         <input type="checkbox" name="contemporary" id="contemporary" /></br>
-        <input type="text" name="funFact" id="funFact" placeholder="Fun Fact"></br>
-        <input type="submit" value="Craft Your Cocktail">
+        <label for="funFact">Fun Fact</label>
+        <input type="text" name="funFact" id="funFact" value="<%= cocktails.funFact %>"></br>
+        <input type="submit" value="Update Cocktail">
     </form>
 </body>
 </html>
