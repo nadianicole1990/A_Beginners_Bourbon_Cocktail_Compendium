@@ -11,7 +11,8 @@ const cocktailSchema = new Schema({
     otherIngredients: Array,
     garnish: String,
     classic: Boolean,
-    funFact: String
+    funFact: String,
+    image: String
 });
 
 const Cocktails = mongoose.model('Cocktails', cocktailSchema);

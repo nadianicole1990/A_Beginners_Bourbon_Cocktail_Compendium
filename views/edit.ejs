@@ -7,27 +7,29 @@
 </head>
 <body>
     <h1>Edit</h1>
-    <form action="/cocktails/<%= index %>?_method=PUT" method="POST">
+    <form action="/cocktails/ <%= cocktail.id %>?_method=PUT" method="POST">
         <label for="name">Name</label>
-        <input type="text" name="name" id="name" value="<%= cocktails.name %>"></br>
+        <input type="text" name="name" id="name" value="<%= cocktail.name %>"></br>
         <label for="tools">Tools</label>
-        <input type="text" name="tools" id="tools" value="<%= cocktails.tools %>"></br>
+        <input type="text" name="tools" id="tools" value="<%= cocktail.tools %>"></br>
         <label for="glass">Glass</label>
-        <input type="text" name="glass" id="glass" value="<%= cocktails.glass %>"></br>
+        <input type="text" name="glass" id="glass" value="<%= cocktail.glass %>"></br>
         <label for="method">Method</label>
-        <input type="text" name="method" id="method" value="<%= cocktails.method %>"></br>
+        <input type="text" name="method" id="method" value="<%= cocktail.method %>"></br>
         <label for="pourChoice">Pour Choice</label>
-        <input type="text" name="pourChoice" id="pourChoice" value="<%= cocktails.pourChoice %>"></br>
+        <input type="text" name="pourChoice" id="pourChoice" value="<%= cocktail.pourChoice %>"></br>
         <label for="otherIngredients">Other Ingredients</label>
-        <input type="text" name="otherIngredients" id="otherIngredients" value="<%= cocktails.otherIngredients %>"></br>
+        <input type="text" name="otherIngredients" id="otherIngredients" value="<%= cocktail.otherIngredients %>"></br>
         <label for="garnish">Garnish</label>
-        <input type="text" name="garnish" id="garnish" value="<%= cocktails.garnish %>"></br>
+        <input type="text" name="garnish" id="garnish" value="<%= cocktail.garnish %>"></br>
         <label for="classic">Classic</label>
         <input type="checkbox" name="classic" id="classic" />
         <label for="contemporary">Contemporary</label>
         <input type="checkbox" name="contemporary" id="contemporary" /></br>
         <label for="funFact">Fun Fact</label>
-        <input type="text" name="funFact" id="funFact" value="<%= cocktails.funFact %>"></br>
+        <input type="text" name="funFact" id="funFact" value="<%= cocktail.funFact %>"></br>
+        <label for="image">Image</label>
+        <input type="text" name="image" id="image" placeholder="Image File"></br>
         <input type="submit" value="Update Cocktail">
     </form>
 </body>
