@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Edit</h1>
-    <form action="/cocktails/ <%= cocktail.id %>?_method=PUT" method="POST">
+    <form action="/cocktails/<%= cocktail.id %>?_method=PUT" method="POST">
         <label for="name">Name</label>
         <input type="text" name="name" id="name" value="<%= cocktail.name %>"></br>
         <label for="tools">Tools</label>
@@ -23,13 +23,21 @@
         <label for="garnish">Garnish</label>
         <input type="text" name="garnish" id="garnish" value="<%= cocktail.garnish %>"></br>
         <label for="classic">Classic</label>
-        <input type="checkbox" name="classic" id="classic" />
+        <input type="checkbox" name="classic" id="classic"
+            <% if(cocktail.classic === true) { %>
+                checked
+            <% } %>
+        />
         <label for="contemporary">Contemporary</label>
-        <input type="checkbox" name="contemporary" id="contemporary" /></br>
+        <input type="checkbox" name="contemporary" id="contemporary"
+            <% if(cocktail.classic === false) { %>
+                checked
+            <% } %>
+        /></br>
         <label for="funFact">Fun Fact</label>
         <input type="text" name="funFact" id="funFact" value="<%= cocktail.funFact %>"></br>
         <label for="image">Image</label>
-        <input type="text" name="image" id="image" placeholder="Image File"></br>
+        <input type="text" name="image" id="image" value="<%= cocktail.img %>"></br>
         <input type="submit" value="Update Cocktail">
     </form>
 </body>

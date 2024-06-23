@@ -10,10 +10,11 @@
         <h2>
             <% if (cocktail.classic === true) { %>
                 <span> Classic </span>
-                <% } else { %>
+                <% } else if (cocktail.classic === false){ %>
                     <span> Contemporary </span>
                     <% } %>
         </h2>
+        <img src="<%= cocktail.image %>" />
     <a href="/cocktails/">BACK</a>
 </body>
 </html>
