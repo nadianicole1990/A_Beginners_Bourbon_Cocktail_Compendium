@@ -16,7 +16,7 @@ router.get('/seed', async (req, res) => {
             garnish: 'Orange Twist',
             classic: true,
             funFact: '',
-            image: './images/old_fashioned.png'
+            image: ''
         },
         {
             name: 'Whiskey Sour',

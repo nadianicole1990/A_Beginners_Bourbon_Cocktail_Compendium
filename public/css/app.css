@@ -1,0 +1,52 @@
+.special-elite-regular {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+body {
+    margin: 0;
+    background-color: antiquewhite;
+    font-family: "Special Elite", system-ui;
+}
+
+header {
+    background-image: url("https://i.postimg.cc/V6yr3KXC/bourbon.jpg");
+    text-align: center;
+    height: 500px;
+}
+
+h1 {
+    text-align: center;
+    height: 500px;
+}
+
+a {
+    font-family: "Special Elite", system-ui;
+    color: black;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black;
+}
+
+a:hover {
+    font-family: "Special Elite", system-ui;
+    color: ghostwhite;
+}
+
+li {
+    font-family: "Special Elite", system-ui;
+    list-style: none;
+}
+
+li a {
+    font-family: "Special Elite", system-ui;
+    color: rgb(179, 123, 60);
+}
+
+input[type=text] {
+    font-family: "Special Elite", system-ui;
+}
+
+input[type=submit] {
+    font-family: "Special Elite", system-ui;
+}
