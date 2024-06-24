@@ -10,12 +10,15 @@
     <title>Cocktails Index</title>
 </head>
 <body>
-    <header class="bourbon">Bourbon Cocktails</header>
+    <header>
+        <span class="bourbon"> The Beginner's Bourbon </br> Cocktail Compendium </span>
+        </header>
         <ul>
             <% for (let i = 0; i < cocktails.length; i++) { %>
                 <li>
                     <a href="/cocktails/<%= cocktails[i].id %>">
                         <%= cocktails[i].name %>
+                        <img class="icon" src="<%= cocktails[i].image %>">
                     </a>
                     <form action="/cocktails/<%= cocktails[i].id %>?_method=DELETE" method="POST">
                         <input type="submit" value="Delete">
@@ -23,9 +26,11 @@
                     <button><a href="/cocktails/<%= cocktails[i].id %>/edit">Edit</a></button>
                 </li>
             <% } %>
+                <li>
+                    <a href="/cocktails/new">Craft a New Cocktail
+                        <img class="icon" src="https://i.postimg.cc/02xmbcWf/custom.png">
+                    </a>
+                </li>
         </ul>
-        <nav>
-            <a href="/cocktails/new">Craft a New Cocktail</a>
-        </nav>
 </body>
 </html>
