@@ -10,17 +10,20 @@
     <title>Cocktails Show</title>
 </head>
 <body>
-    <h1><%= cocktail.name %></h1>
-        <h2>
-            <% if (cocktail.classic === true) { %>
-                <span> Classic </span>
-                <% } else if (cocktail.classic === false){ %>
-                    <span> Contemporary </span>
-                    <% } %>
-        </h2>
+    <div id="container">
         <span>
-            <img src="<%= cocktail.image %>">
-        </span></br>
+            <img id="cocktail-image" src="<%= cocktail.image %>">
+        </span>
+        <h1 id="cocktail-name"><%= cocktail.name %></h2>
+            <h2 id="cocktail-type">
+                <% if (cocktail.classic === true) { %>
+                    <span> Classic </span>
+                    <% } else if (cocktail.classic === false){ %>
+                        <span> Contemporary </span>
+                        <% } %>
+            </h3>
+    </div>
+    </br>
         <ul>
             <li><strong>Tools:</strong> <%= cocktail.tools %></li></br>
             <li><strong>Glass:</strong> <%= cocktail.glass %></li></br>

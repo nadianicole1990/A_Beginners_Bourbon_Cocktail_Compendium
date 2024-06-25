@@ -25,13 +25,38 @@ span.bourbon {
 }
 
 h1 {
-    text-align: center;
+    writing-mode: vertical-lr;
+    transform: rotateZ(180deg);
+    display: inline-block;
 }
 
-a {
+h2 {
+    writing-mode: vertical-lr;
+    transform: rotateZ(180deg);
+    display: inline-block;
+}
+
+a#link {
     font-family: "Special Elite", system-ui;
     color: black;
     text-decoration: none;
+    writing-mode: vertical-lr;
+    transform: rotateZ(180deg);
+    text-shadow: 1px 1px 1px black;
+}
+
+a#edit {
+    font-family: "Special Elite", system-ui;
+    color: black;
+    text-decoration: none;
+}
+
+a#new {
+    font-family: "Special Elite", system-ui;
+    color: black;
+    text-decoration: none;
+    writing-mode: vertical-lr;
+    transform: rotateZ(180deg);
     text-shadow: 1px 1px 1px black;
 }
 
@@ -40,8 +65,35 @@ a:hover {
     color: ghostwhite;
 }
 
+#container {
+    position: relative;
+    height: 1000px;
+}
+
+#cocktail-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#cocktail-name {
+    z-index: 100;
+    position: absolute;
+    color: white;
+    left: 15px;
+    top: 450px;
+}
+
+#cocktail-type {
+    z-index: 100;
+    position: absolute;
+    color: white;
+    left: 45px;
+    top: 450px;
+}
+
 img.icon {
-    height: 200px;
+    height: 300px;
     border-radius: 10px;
 }
 
