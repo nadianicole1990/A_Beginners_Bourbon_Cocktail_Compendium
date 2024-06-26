@@ -24,21 +24,25 @@ A basic instructional guide for making bourbon cocktails, to be enjoyed by bourb
 * HTML
 * CSS
 * JavaScript
+* Node.js
+* Express
+* Mongoose
+* MongoDB
 * Canva
 
 ## <a name="features"></a>Features
-* User begins with a default of 50 credits.
-* User can play multiple rounds of slots, wagering one credit per round.
-* If three matching symbols show along the center payline, user will see a pop-up modal announcing "YOU ARE ON FIRE" and credits will increase according to first column of paytable.
-* If there is not a win-condition met, user will see a pop-up modal announcing "HARSH BURN" and credits will remain the same.
-* After closing either modal, the reels will return to their original position, and the user can play again.
+* User can view details of individual cocktails or bourbons
+* User can edit existing details for individual cocktails or bourbons
+* User can add a new cocktail or bourbon
+* User can delete an existing cocktail or bourbon
 
 ## <a name="design"></a>Design
 * Design elements implemented using HTML, CSS, and Canva
 
 ## <a name="nextsteps"></a>Project Next Steps
-* Pouring Animation
-* 
+* Landing Page with Pouring Animation && Sound
+* Bartender Tools Collection
+* Tips && Tricks Modals
 
 ## <a name="deployment"></a>Deployed Link
 
