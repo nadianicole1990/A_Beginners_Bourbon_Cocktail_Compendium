@@ -1,4 +1,4 @@
-# A Beginner' s Bourbon Cocktail Compendium
+# A Beginner's Bourbon Cocktail Compendium
 #### A full-stack web application built as second project for General Assembly bootcamp.
 <img width="1176" alt="Screenshot 2024-06-26 at 15 32 51" src="https://github.com/nadianicole1990/A_Beginners_Bourbon_Cocktail_Compendium/assets/157327606/c0827e28-7d82-4a39-baf1-44d8697c25ff">
 <img width="1122" alt="Screenshot 2024-06-26 at 15 31 32" src="https://github.com/nadianicole1990/A_Beginners_Bourbon_Cocktail_Compendium/assets/157327606/10ca9dcd-c21d-4e3a-97c1-7447fd255cb6">
