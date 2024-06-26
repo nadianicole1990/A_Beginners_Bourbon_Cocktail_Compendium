@@ -67,6 +67,7 @@ a:hover {
 }
 
 #container {
+    display: inline-block;
     position: relative;
     height: 1000px;
 }
@@ -98,11 +99,16 @@ img.icon {
     border-radius: 10px;
 }
 
+img#cocktail-image {
+    display: inline-block;
+}
+
 ul#cocktail-deets {
     display: inline-block;
 }
 
 li {
+    margin-bottom: 10px;
     font-family: "Special Elite", system-ui;
     list-style: none;
     display: inline-block;

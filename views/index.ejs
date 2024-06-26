@@ -21,13 +21,13 @@
                         <%= cocktails[i].name %>
                     </a>
                     <img class="icon" src="<%= cocktails[i].image %>">
-                    <form action="/cocktails/<%= cocktails[i].id %>?_method=DELETE" method="POST">
+                    <form id="delete" action="/cocktails/<%= cocktails[i].id %>?_method=DELETE" method="POST">
                         <input type="submit" value="Delete">
                     </form>
-                    <button><a id="edit" href="/cocktails/<%= cocktails[i].id %>/edit">Edit</a></button>
+                    <button id="edit"><a id="edit" href="/cocktails/<%= cocktails[i].id %>/edit">Edit</a></button>
                 </li>
             <% } %>
-                <li>
+            </br><li>
                     <a id="new" href="/cocktails/new">Craft a New Cocktail</a>
                     <img class="icon" src="https://i.postimg.cc/02xmbcWf/custom.png">
                 </li>

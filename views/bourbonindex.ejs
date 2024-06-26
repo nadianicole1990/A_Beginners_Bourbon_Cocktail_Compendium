@@ -20,13 +20,13 @@
                     <a id="bourbon-link" href="/bourbons/<%= bourbons[i].id %>">
                         <img class="icon" src="<%= bourbons[i].image %>">
                     </a>
-                    <form action="/bourbons/<%= bourbons[i].id %>?_method=DELETE" method="POST">
+                    <form id="delete" action="/bourbons/<%= bourbons[i].id %>?_method=DELETE" method="POST">
                         <input type="submit" value="Delete">
                     </form>
-                    <button><a id="edit" href="/bourbons/<%= bourbons[i].id %>/edit">Edit</a></button>
+                    <button id="edit"><a id="edit" href="/bourbons/<%= bourbons[i].id %>/edit">Edit</a></button>
                 </li>
             <% } %>
-                <li>
+            </br><li>
                     <a id="new" href="/bourbons/new">Post a New Bourbon</a>
                     <img class="icon" src="https://i.postimg.cc/Px5y5Y4K/1.png">
                 </li>
