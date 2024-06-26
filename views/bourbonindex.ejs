@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/app.css">
+    <title>Bourbons Index</title>
+</head>
+<body>
+    <header>
+        <span class="bourbon"> The Beginner's Bourbon </br> Cocktail Compendium </span>
+        </header>
+        <ul>
+            <% for (let i = 0; i < bourbons.length; i++) { %>
+                <li>
+                    <a id="link" href="/bourbons/<%= bourbons[i].id %>">
+                        <%= bourbons[i].name %>
+                    </a>
+                    <img class="icon" src="<%= bourbons[i].image %>">
+                    <form action="/cocktails/<%= bourbons[i].id %>?_method=DELETE" method="POST">
+                        <input type="submit" value="Delete">
+                    </form>
+                    <button><a id="edit" href="/bourbons/<%= bourbons[i].id %>/edit">Edit</a></button>
+                </li>
+            <% } %>
+                <li>
+                    <a id="new" href="/bourbons/new">Post a New Bourbon</a>
+                    <img class="icon" src="https://i.postimg.cc/fLzdwCBg/1.png">
+                </li>
+        </ul>
+</body>
+</html>

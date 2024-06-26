@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/app.css">
+    <title>Bourbons Show</title>
+</head>
+<body>
+    <div id="container">
+        <h1 id="bourbon-name"><%= bourbon.name %></h2>
+        <span>
+            <img id="bourbon-image" src="<%= bourbon.image %>">
+        </span>
+    </div>
+    </br>
+        <ul>
+            <li><strong>Distillery:</strong> <%= bourbon.distillery %></li></br>
+            <li><strong>Class:</strong>
+                <% if (bourbon.budget === true) { %>
+                    <span> Budget </span>
+                    <% } else if (bourbon.budget === false){ %>
+                        <span> Premium </span>
+                        <% } %>
+            </li></br>
+            <li><strong>Mash Bill:</strong> <%= bourbon.mashBill %></li></br>
+            <li><strong>Nose:</strong> <%= bourbon.nose %></li></br>
+            <li><strong>Taste:</strong> <%= bourbon.taste %></li></br>
+            <li><strong>Finish:</strong> <%= bourbon.finish %></li></br>
+        </ul>
+    <a href="/bourbons/">BACK</a>
+</body>
+</html>

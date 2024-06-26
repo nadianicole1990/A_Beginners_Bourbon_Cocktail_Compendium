@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/app.css">
+    <title>Bourbons New</title>
+</head>
+<body>
+    <h1>Post a New Bourbon</h1>
+    <form action="/bourbons/" method="POST">
+        <input type="text" name="name" id="name" placeholder="Name"></br>
+        <input type="text" name="distillery" id="distillery" placeholder="Distillery"></br>
+        <label for="budget">Budget</label>
+        <input type="checkbox" name="budget" id="budget" />
+        <label for="premium">Premium</label>
+        <input type="checkbox" name="premium" id="premium" /></br>
+        <input type="text" name="mashBill" id="mashBill" placeholder="Mash Bill"></br>
+        <input type="text" name="nose" id="nose" placeholder="Nose"></br>
+        <input type="text" name="taste" id="taste" placeholder="Taste"></br>
+        <input type="text" name="finish" id="finish" placeholder="Finish"></br>
+        <input type="text" name="image" id="image" placeholder="Image"></br>
+        <input type="submit" value="Post Your Bourbon">
+</body>
+</html>

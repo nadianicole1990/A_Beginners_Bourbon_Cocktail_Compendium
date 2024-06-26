@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/app.css">
+    <title>Bourbons Edit</title>
+</head>
+<body>
+    <h1>Edit</h1>
+    <form action="/bourbons/<%= bourbon.id %>?_method=PUT" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" value="<%= bourbon.name %>"></br>
+        <label for="distillery">Distillery</label>
+        <input type="text" name="distillery" id="distillery" value="<%= bourbon.distillery %>"></br>
+        <label for="budget">Budget</label>
+        <input type="checkbox" name="budget" id="budget"
+            <% if(bourbon.budget === true) { %>
+                checked
+            <% } %>
+        />
+        <label for="premium">Premium</label>
+        <input type="checkbox" name="premium" id="premium"
+            <% if(bourbon.budget === false) { %>
+                checked
+            <% } %>
+        /></br>
+        <label for="nose">Nose</label>
+        <input type="text" name="nose" id="nose" value="<%= bourbon.nose %>"></br>
+        <label for="taste">Taste</label>
+        <input type="text" name="taste" id="taste" value="<%= bourbon.taste %>"></br>
+        <label for="finish">Finish</label>
+        <input type="text" name="finish" id="finish" value="<%= bourbon.finish %>"></br>
+        <label for="image">Image</label>
+        <input type="text" name="image" id="image" value="<%= bourbon.image %>"></br>
+        <input type="submit" value="Update Bourbon">
+    </form>
+</body>
+</html>
