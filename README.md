@@ -3,12 +3,12 @@
 <img width="1176" alt="Screenshot 2024-06-26 at 15 32 51" src="https://github.com/nadianicole1990/A_Beginners_Bourbon_Cocktail_Compendium/assets/157327606/c0827e28-7d82-4a39-baf1-44d8697c25ff">
 <img width="1122" alt="Screenshot 2024-06-26 at 15 31 32" src="https://github.com/nadianicole1990/A_Beginners_Bourbon_Cocktail_Compendium/assets/157327606/10ca9dcd-c21d-4e3a-97c1-7447fd255cb6">
 
-
 ## Description
 A basic instructional guide for making bourbon cocktails, to be enjoyed by bourbon enthusiasts and beverage service professionals alike.
 
 ## Table of Contents
 * [User Stories](#userstories)
+* [Wireframes](#wireframes)
 * [Technologies Used](#technologiesused)
 * [Features](#features)
 * [Design](#design)
@@ -21,6 +21,10 @@ A basic instructional guide for making bourbon cocktails, to be enjoyed by bourb
 * As a bourbon enthusiast, I want a clean interface that stylistically represents bourbon culture so that I can enjoy my experience.
 * As a cocktail maker, I want clear and detailed information that is presented in an intuitive way so that I can replicate the recipes.
 * As a modern human, I want a reliable application that performs as expected so that I can reference it without delay and frustration.
+
+## <a name="wireframes"></a> Wireframes
+![A Beginner’s Bourbon Cocktail Compendium](https://github.com/nadianicole1990/A_Beginners_Bourbon_Cocktail_Compendium/assets/157327606/23722c73-594e-4176-8b4e-0daa60c2741a)
+![A Beginner’s Bourbon Cocktail Compendium 2](https://github.com/nadianicole1990/A_Beginners_Bourbon_Cocktail_Compendium/assets/157327606/7526608c-bbea-4e47-9a4a-382ebe3d9a83)
 
 ## <a name="technologiesused"></a>Technologies Used
 * HTML
