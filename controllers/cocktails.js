@@ -16,7 +16,6 @@ router.get('/seed', async (req, res) => {
             otherIngredients: ['Sugar', 'Angostura Bitters', 'Water'],
             garnish: 'Orange Twist',
             classic: true,
-            funFact: '',
             image: ''
         },
         {
@@ -29,7 +28,6 @@ router.get('/seed', async (req, res) => {
             otherIngredients: ['Fresh Lemon Juice', 'Simple Syrup', 'Egg White'],
             garnish: 'Angostura Bitters',
             classic: true,
-            funFact: '',
             image: ''
         },
         {
@@ -42,7 +40,6 @@ router.get('/seed', async (req, res) => {
             otherIngredients: ['Mint', 'Simple'],
             garnish: 'Mint Sprig',
             classic: true,
-            funFact: '',
             image: ''
         },
         {
@@ -55,7 +52,6 @@ router.get('/seed', async (req, res) => {
             otherIngredients: ['Campari', 'Sweet Vermouth'],
             garnish: 'Orange Twist',
             classic: true,
-            funFact: '',
             image: ''
         },
         {
@@ -68,7 +64,6 @@ router.get('/seed', async (req, res) => {
             otherIngredients: ['Aperol', 'Amaro Nonino Quintessentia', 'Fresh Lemon Juice'],
             garnish: 'Small Paper Plane',
             classic: false,
-            funFact: '',
             image: ''
         }
     ]);

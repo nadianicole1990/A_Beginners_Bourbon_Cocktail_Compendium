@@ -16,11 +16,10 @@
         <ul>
             <% for (let i = 0; i < bourbons.length; i++) { %>
                 <li>
-                    <a id="link" href="/bourbons/<%= bourbons[i].id %>">
-                        <%= bourbons[i].name %>
+                    <a id="bourbon-link" href="/bourbons/<%= bourbons[i].id %>">
+                        <img class="icon" src="<%= bourbons[i].image %>">
                     </a>
-                    <img class="icon" src="<%= bourbons[i].image %>">
-                    <form action="/cocktails/<%= bourbons[i].id %>?_method=DELETE" method="POST">
+                    <form action="/bourbons/<%= bourbons[i].id %>?_method=DELETE" method="POST">
                         <input type="submit" value="Delete">
                     </form>
                     <button><a id="edit" href="/bourbons/<%= bourbons[i].id %>/edit">Edit</a></button>

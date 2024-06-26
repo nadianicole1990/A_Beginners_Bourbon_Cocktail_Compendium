@@ -11,10 +11,7 @@ body {
 }
 
 header {
-    background-image: url("https://i.postimg.cc/V6yr3KXC/bourbon.jpg");
-    background-repeat: no-repeat;
     color: antiquewhite;
-    height: 500px;
 }
 
 span.bourbon {
@@ -60,6 +57,10 @@ a#new {
     text-shadow: 1px 1px 1px black;
 }
 
+a#bourbon-link {
+    text-decoration: none;
+}
+
 a:hover {
     font-family: "Special Elite", system-ui;
     color: ghostwhite;
@@ -95,6 +96,10 @@ a:hover {
 img.icon {
     height: 300px;
     border-radius: 10px;
+}
+
+ul#cocktail-deets {
+    display: inline-block;
 }
 
 li {
