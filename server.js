@@ -3,8 +3,9 @@ const express = require('express');
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
 const app = express();
-const port = 2222;
-const mongoURI = 'mongodb://127.0.0.1:27017/';
+require('dotenv').config()
+const port = process.env.PORT || 2222;
+const mongoURI = process.env.MONGOURI;
 
 async function connectToMongo() {
     try {
