@@ -9,7 +9,8 @@ const bourbonSchema = new Schema({
     nose: String,
     taste: String,
     finish: String,
-    image: String
+    image: String,
+    link: String
 });
 
 const Bourbons = mongoose.model('Bourbons', bourbonSchema);
