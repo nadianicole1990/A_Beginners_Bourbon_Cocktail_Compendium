@@ -1,6 +1,7 @@
 # A Beginner' s Bourbon Cocktail Compendium
 #### A full-stack web application built as second project for General Assembly bootcamp.
 <img width="1186" alt="Screenshot 2024-06-26 at 15 23 38" src="https://github.com/nadianicole1990/A_Beginners_Bourbon_Cocktail_Compendium/assets/157327606/5a0df689-7e31-415e-9c87-47e7c495f73b">
+<img width="1122" alt="Screenshot 2024-06-26 at 15 31 32" src="https://github.com/nadianicole1990/A_Beginners_Bourbon_Cocktail_Compendium/assets/157327606/10ca9dcd-c21d-4e3a-97c1-7447fd255cb6">
 
 ## Description
 A basic instructional guide for making bourbon cocktails, to be enjoyed by bourbon enthusiasts and beverage service professionals alike.
